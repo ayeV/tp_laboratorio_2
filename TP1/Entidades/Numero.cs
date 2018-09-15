@@ -67,11 +67,11 @@ namespace Entidades
         {
             double numDecimal = 0;
             int exponente = 0;
-            int nro = 0;
+            float nro = 0;
             for (int i = binario.Length - 1; i >= 0; i--)
             {
                 string posibleNumero = binario.Substring(i, 1);
-                if (int.TryParse(posibleNumero, out nro))
+                if (float.TryParse(posibleNumero, out nro))
                 {
                     numDecimal += (nro * Math.Pow(2, exponente));
                     exponente++;
@@ -84,8 +84,9 @@ namespace Entidades
             return numDecimal.ToString();
 
 
-
         }
+
+
         /// <summary>
         /// Convierte un decimal a binario
         /// </summary>
@@ -149,7 +150,7 @@ namespace Entidades
             double resultado = 0;
             if (n2._numero != 0)
             {
-                resultado = n1._numero / n2._numero;
+                resultado = (float) n1._numero / n2._numero;
             }
             return resultado;
         }

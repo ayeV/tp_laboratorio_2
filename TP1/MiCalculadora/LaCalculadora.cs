@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Entidades;
 namespace MiCalculadora
 
 {
@@ -43,26 +43,26 @@ namespace MiCalculadora
 
         private void btnOperar_Click(object sender, EventArgs e)
         {
-            double resutlado = Operar(textNumero1.Text, textNumero2.Text, cmbOperador.SelectedItem.ToString());
-            lblResultado.Text = resutlado.ToString();
+            double resultado = Operar(textNumero1.Text, textNumero2.Text, cmbOperador.SelectedItem.ToString());
+            lblResultado.Text = resultado.ToString();
         }
         private static double Operar(string numero1, string numero2, string operador)
         {
-            double resultado = Entidades.Calculadora.Operar(new Entidades.Numero(numero1), new Entidades.Numero(numero2), operador);
+           return Calculadora.Operar(new Numero(numero1), new Numero(numero2), operador);
 
-            return resultado;
+            
         }
 
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
-            Entidades.Numero numero1 = new Entidades.Numero(textNumero1.Text);
+            Numero numero1 = new Numero(textNumero1.Text);
             lblResultado.Text = numero1.DecimalBinario(textNumero1.Text);
 
         }
 
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
-            Entidades.Numero numero1 = new Entidades.Numero(textNumero1.Text);
+            Numero numero1 = new Numero(textNumero1.Text);
             lblResultado.Text = numero1.BinarioDecimal(textNumero1.Text);
         }
         
