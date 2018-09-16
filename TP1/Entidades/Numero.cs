@@ -33,7 +33,7 @@ namespace Entidades
         {
             set
             {
-                this._numero = Numero.ValidarNumero(value);
+                this._numero = ValidarNumero(value);
             }
         }
 
@@ -53,6 +53,7 @@ namespace Entidades
             {
                 return dbNumero;
             }
+           
 
             return 0;
 

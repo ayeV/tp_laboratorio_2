@@ -56,16 +56,41 @@ namespace MiCalculadora
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
             Numero numero1 = new Numero(textNumero1.Text);
-            lblResultado.Text = numero1.DecimalBinario(textNumero1.Text);
+           
+            
+            string output = "";
+            if (lblResultado.Text != "resultado")
+            {
+                output = numero1.DecimalBinario(lblResultado.Text);
+            }
+            else 
+            {
+                output = numero1.DecimalBinario(textNumero1.Text);
+            }
+
+            lblResultado.Text = output;
 
         }
 
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
             Numero numero1 = new Numero(textNumero1.Text);
-            lblResultado.Text = numero1.BinarioDecimal(textNumero1.Text);
+          
+            string output = "";
+            if (lblResultado.Text != "resultado")
+            {
+                output = numero1.BinarioDecimal(lblResultado.Text);
+            }
+            else
+            {
+                output = numero1.BinarioDecimal(textNumero1.Text);
+            }
+
+            lblResultado.Text = output;
+
+
         }
 
-       
+
     }
 }
