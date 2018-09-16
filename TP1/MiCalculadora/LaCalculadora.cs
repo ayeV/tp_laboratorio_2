@@ -32,10 +32,10 @@ namespace MiCalculadora
 
         private void Limpiar()
         {
-            lblResultado.Text = "";
-            textNumero1.Text = "";
-            textNumero2.Text = "";
-            cmbOperador.Text = "";
+            lblResultado.Text = string.Empty;
+            textNumero1.Text = string.Empty;
+            textNumero2.Text = string.Empty;
+            cmbOperador.Text = string.Empty;
 
         }
 
@@ -65,8 +65,7 @@ namespace MiCalculadora
             Numero numero1 = new Numero(textNumero1.Text);
             lblResultado.Text = numero1.BinarioDecimal(textNumero1.Text);
         }
-        
 
-
+       
     }
 }

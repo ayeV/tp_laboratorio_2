@@ -67,11 +67,11 @@ namespace Entidades
         {
             double numDecimal = 0;
             int exponente = 0;
-            float nro = 0;
+            int nro = 0;
             for (int i = binario.Length - 1; i >= 0; i--)
             {
                 string posibleNumero = binario.Substring(i, 1);
-                if (float.TryParse(posibleNumero, out nro))
+                if (int.TryParse(posibleNumero, out nro))
                 {
                     numDecimal += (nro * Math.Pow(2, exponente));
                     exponente++;
@@ -85,6 +85,7 @@ namespace Entidades
 
 
         }
+
 
 
         /// <summary>
@@ -102,7 +103,7 @@ namespace Entidades
                 double resto = numero1 % 2;
                 double parteBinaria = (resto % 2 == 0) ? 0 : 1;
                 nroBin = parteBinaria.ToString() + nroBin.ToString();
-                numero1 = numero1 / 2;
+                numero1 =  numero1 / 2;
 
             } while (numero1 != 1 && numero1 != 0);
             nroBin = numero1.ToString() + nroBin.ToString();
@@ -115,7 +116,7 @@ namespace Entidades
         /// <returns>Retorna el nro en binario si es posible, sino retorna "valor invalido"</returns>
         public string DecimalBinario(string numero)
         {
-            double nroDecimal = 0;
+            double nroDecimal;
             string retorno = "Valor invalido";
             if (double.TryParse(numero, out nroDecimal))
             {
@@ -150,7 +151,7 @@ namespace Entidades
             double resultado = 0;
             if (n2._numero != 0)
             {
-                resultado = (float) n1._numero / n2._numero;
+                resultado =  n1._numero / n2._numero;
             }
             return resultado;
         }

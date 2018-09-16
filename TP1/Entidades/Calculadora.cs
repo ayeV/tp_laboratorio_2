@@ -21,7 +21,7 @@ namespace Entidades
         public static double Operar(Numero num1, Numero num2,string operador)
         {
             double retorno = 0;
-            operador = Calculadora.ValidarOperador(operador);
+            operador = ValidarOperador(operador);
             switch (operador)
             {
                 case "+":

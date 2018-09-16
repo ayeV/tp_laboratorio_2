@@ -120,13 +120,13 @@
             // lblResultado
             // 
             this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(47, 69);
+            this.lblResultado.Location = new System.Drawing.Point(47, 34);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(359, 18);
+            this.lblResultado.Size = new System.Drawing.Size(359, 53);
             this.lblResultado.TabIndex = 10;
             this.lblResultado.Text = "resultado";
             this.lblResultado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            
+           
             // 
             // LaCalculadora
             // 
