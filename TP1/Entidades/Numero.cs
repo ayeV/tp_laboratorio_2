@@ -53,7 +53,7 @@ namespace Entidades
             {
                 return dbNumero;
             }
-           
+
 
             return 0;
 
@@ -64,71 +64,144 @@ namespace Entidades
         /// </summary>
         /// <param name="binario">string recibido</param>
         /// <returns>Retorna un string decimal en caso favorable, sino retorna "Valor invalido"</returns>
+       
         public string BinarioDecimal(string binario)
         {
-            double numDecimal = 0;
-            int exponente = 0;
-            int nro = 0;
-            for (int i = binario.Length - 1; i >= 0; i--)
+
+            string retorno = "Valor Invalido";
+            char[] binary = binario.ToCharArray();
+            int contEntero = 0;
+            int contFlotante = -1;
+            double potencia;
+            double num1 = 0.0;
+            double num2;
+            double num3;
+
+            int i;
+            int j;
+            for (i = 0; i < binario.Length && binario != "Valor invalido"; i++)
             {
-                string posibleNumero = binario.Substring(i, 1);
-                if (int.TryParse(posibleNumero, out nro))
+
+                if (i == 0)
                 {
-                    numDecimal += (nro * Math.Pow(2, exponente));
-                    exponente++;
+                    retorno = "";
                 }
+
+                if (binary[i] == ',')
+                {
+
+                    contFlotante = binario.Length - (contEntero + 1);
+                    for (j = 1; j <= contFlotante; j++)
+                    {
+                        if (binary[i + j] == '1')
+                        {
+                            potencia = Math.Pow(2, -j);
+                            num1 += potencia;
+
+                        }
+                    }
+                    break;
+                }
+
                 else
                 {
-                    return "Valor invalido";
+                    contEntero++;
+                    retorno += binary[i];
+                }
+
+            }
+
+            if (contFlotante == -1 && binario.Length != 0 && binario != "Valor invalido")
+            {
+
+                num2 = Convert.ToInt64(retorno,  2);
+                retorno = num2.ToString();
+                
+            }
+
+            else if (contFlotante != -1 && binario != "Valor invalido" && binario.Length != 0)
+            {
+                num3 = Convert.ToInt32(retorno, 2);
+                num3 += num1;
+                retorno = num3.ToString();
+            }
+
+            for (i = 0; i < binario.Length && binario != "Valor invalido"; i++)
+            {
+                if (binary[i] != '1' && binary[i] != '0' && binary[i] != ',')
+                {
+                    retorno = "Valor invalido";
+                    binario = "";
+                    break;
                 }
             }
-            return numDecimal.ToString();
 
+            return retorno;
 
         }
-
-
 
         /// <summary>
         /// Convierte un decimal a binario
         /// </summary>
         /// <param name="numero">valor recibido</param>
         /// <returns>Retorna un string binario </returns>
-        public string DecimalBinario(double numero)
+   
+        public static string DecimalBinario(double numero)
         {
-            string nroBin = "";
-            int numero1 = (int)numero;
-
-            do
+            string retorno = "";
+            int entero = (int)numero;
+            double dec;
+            double decimalProd;
+       
+            
+            dec = numero - entero;
+            decimalProd = dec;
+            retorno = Convert.ToString(entero, 2);
+            
+            if (dec != 0)
             {
-                double resto = numero1 % 2;
-                double parteBinaria = (resto % 2 == 0) ? 0 : 1;
-                nroBin = parteBinaria.ToString() + nroBin.ToString();
-                numero1 =  numero1 / 2;
+                retorno += ',';
+                do
+                {
+                    decimalProd = decimalProd * 2;
+                    if (decimalProd >= 1)
+                    {
+                        decimalProd -= 1;
+                        retorno += 1;
+                        if (decimalProd == 0)
+                        {
+                            continue;
+                        }
+                    }
+                    else if (decimalProd < 1)
+                    {
+                        retorno += 0;
+                    }
+                }while (decimalProd != 0);
+            }
 
-            } while (numero1 != 1 && numero1 != 0);
-            nroBin = numero1.ToString() + nroBin.ToString();
-            return nroBin;
+            return retorno;
         }
+
         /// <summary>
         /// Convierte un decimal a binario
         /// </summary>
         /// <param name="numero">valor recibido</param>
         /// <returns>Retorna el nro en binario si es posible, sino retorna "valor invalido"</returns>
         public string DecimalBinario(string numero)
-        {
-            double nroDecimal;
-            string retorno = "Valor invalido";
-            if (double.TryParse(numero, out nroDecimal))
             {
-                return DecimalBinario(nroDecimal);
+                double nroDecimal;
+                string retorno = "Valor invalido";
+                if (double.TryParse(numero, out nroDecimal))
+                {
+                    return DecimalBinario(nroDecimal);
+                }
+                return retorno;
             }
-            return retorno;
-        }
 
         #endregion
 
-        #region Operadores
+            #region Operadores
         public static double operator -(Numero n1, Numero n2)
         {
 
@@ -152,7 +225,7 @@ namespace Entidades
             double resultado = 0;
             if (n2._numero != 0)
             {
-                resultado =  n1._numero / n2._numero;
+                resultado = n1._numero / n2._numero;
             }
             return resultado;
         }
