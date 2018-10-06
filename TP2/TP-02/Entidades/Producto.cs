@@ -75,7 +75,7 @@ namespace Entidades_2018
 
             if (!object.ReferenceEquals(v1, null) && !object.ReferenceEquals(v2, null))
             {
-                if (string.Compare(v1.codigoDeBarras, v2.codigoDeBarras) == 0)
+                if (string.Equals(v1.codigoDeBarras, v2.codigoDeBarras) == true)
                 {
                     retorno = true;
                 }

@@ -31,3 +31,13 @@ C:\Users\ayele\Desktop\tp2Aye\TP-02\TP-02\bin\Debug\Entidades.dll
 C:\Users\ayele\Desktop\tp2Aye\TP-02\TP-02\bin\Debug\Entidades.pdb
 C:\Users\ayele\Desktop\tp2Aye\TP-02\TP-02\obj\Debug\TP-02.csproj.CopyComplete
 C:\Users\ayele\Desktop\tp2Aye\TP-02\TP-02\obj\Debug\TP-02.pdb
+C:\Users\ayele\Desktop\TP2\TP-02\TP-02\bin\Debug\TP-02.exe.config
+C:\Users\ayele\Desktop\TP2\TP-02\TP-02\bin\Debug\TP-02.exe
+C:\Users\ayele\Desktop\TP2\TP-02\TP-02\bin\Debug\TP-02.pdb
+C:\Users\ayele\Desktop\TP2\TP-02\TP-02\bin\Debug\Entidades.dll
+C:\Users\ayele\Desktop\TP2\TP-02\TP-02\bin\Debug\Entidades.pdb
+C:\Users\ayele\Desktop\TP2\TP-02\TP-02\obj\Debug\TP-02.csprojAssemblyReference.cache
+C:\Users\ayele\Desktop\TP2\TP-02\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cache
+C:\Users\ayele\Desktop\TP2\TP-02\TP-02\obj\Debug\TP-02.csproj.CopyComplete
+C:\Users\ayele\Desktop\TP2\TP-02\TP-02\obj\Debug\TP-02.exe
+C:\Users\ayele\Desktop\TP2\TP-02\TP-02\obj\Debug\TP-02.pdb
