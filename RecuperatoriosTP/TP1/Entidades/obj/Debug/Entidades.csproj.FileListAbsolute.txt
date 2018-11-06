@@ -1,0 +1,18 @@
+C:\Users\ayele\Desktop\TP1\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\ayele\Desktop\TP1\Entidades\bin\Debug\Entidades.dll
+C:\Users\ayele\Desktop\TP1\Entidades\bin\Debug\Entidades.pdb
+C:\Users\ayele\Desktop\TP1\Entidades\obj\Debug\Entidades.dll
+C:\Users\ayele\Desktop\TP1\Entidades\obj\Debug\Entidades.pdb
+C:\Users\ayele\Desktop\TP1\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\ayele\Desktop\tpfunciona\Entidades\bin\Debug\Entidades.dll
+C:\Users\ayele\Desktop\tpfunciona\Entidades\bin\Debug\Entidades.pdb
+C:\Users\ayele\Desktop\tpfunciona\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\ayele\Desktop\tpfunciona\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\ayele\Desktop\tpfunciona\Entidades\obj\Debug\Entidades.dll
+C:\Users\ayele\Desktop\tpfunciona\Entidades\obj\Debug\Entidades.pdb
+C:\Users\ayele\Desktop\Prog 2\tpfunciona\Entidades\bin\Debug\Entidades.dll
+C:\Users\ayele\Desktop\Prog 2\tpfunciona\Entidades\bin\Debug\Entidades.pdb
+C:\Users\ayele\Desktop\Prog 2\tpfunciona\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\ayele\Desktop\Prog 2\tpfunciona\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\ayele\Desktop\Prog 2\tpfunciona\Entidades\obj\Debug\Entidades.dll
+C:\Users\ayele\Desktop\Prog 2\tpfunciona\Entidades\obj\Debug\Entidades.pdb
