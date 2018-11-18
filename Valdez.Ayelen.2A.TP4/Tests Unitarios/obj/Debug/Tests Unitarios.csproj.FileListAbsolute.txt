@@ -1,0 +1,17 @@
+C:\Users\ayele\Desktop\Valdez.Ayelen.2A.TP4\Tests Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\ayele\Desktop\Valdez.Ayelen.2A.TP4\Tests Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\ayele\Desktop\Valdez.Ayelen.2A.TP4\Tests Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\ayele\Desktop\Valdez.Ayelen.2A.TP4\Tests Unitarios\bin\Debug\Tests Unitarios.dll
+C:\Users\ayele\Desktop\Valdez.Ayelen.2A.TP4\Tests Unitarios\bin\Debug\Tests Unitarios.pdb
+C:\Users\ayele\Desktop\Valdez.Ayelen.2A.TP4\Tests Unitarios\bin\Debug\Entidades.dll
+C:\Users\ayele\Desktop\Valdez.Ayelen.2A.TP4\Tests Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\ayele\Desktop\Valdez.Ayelen.2A.TP4\Tests Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\ayele\Desktop\Valdez.Ayelen.2A.TP4\Tests Unitarios\bin\Debug\Entidades.pdb
+C:\Users\ayele\Desktop\Valdez.Ayelen.2A.TP4\Tests Unitarios\bin\Debug\Entidades.dll.config
+C:\Users\ayele\Desktop\Valdez.Ayelen.2A.TP4\Tests Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\ayele\Desktop\Valdez.Ayelen.2A.TP4\Tests Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\ayele\Desktop\Valdez.Ayelen.2A.TP4\Tests Unitarios\obj\Debug\Tests Unitarios.csprojAssemblyReference.cache
+C:\Users\ayele\Desktop\Valdez.Ayelen.2A.TP4\Tests Unitarios\obj\Debug\Tests Unitarios.csproj.CoreCompileInputs.cache
+C:\Users\ayele\Desktop\Valdez.Ayelen.2A.TP4\Tests Unitarios\obj\Debug\Tests Unitarios.csproj.CopyComplete
+C:\Users\ayele\Desktop\Valdez.Ayelen.2A.TP4\Tests Unitarios\obj\Debug\Tests Unitarios.dll
+C:\Users\ayele\Desktop\Valdez.Ayelen.2A.TP4\Tests Unitarios\obj\Debug\Tests Unitarios.pdb
